@@ -1,6 +1,137 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: "Poppins", sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100&display=swap');
+
+
+
+.logo img{
+    width: 10%;
+    position: relative;
+    border-radius: 8px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0px auto;
+    align-items: center;
+}
+.header ul{
+    display: flex;
+    list-style: none;
+    font-size: 19px;
+    gap: 8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 300;
+    color: aliceblue;
+    
+}
+
+.banner{
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.banner .glass-wrapper{
+    width: 30%;
+    height: 100%;
+    background: rgba( 7, 42, 108, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 16.5px );
+    -webkit-backdrop-filter: blur( 16.5px );
+    border-radius: 10px;
+}
+.hero-tittle{
+    max-width: 1200px;
+    margin: 0px auto;
+    padding-top: 13rem;
+    color: aliceblue;
+}
+
+.hero-tittle p{
+    font-size: 47px;
+    font-weight: 300;
+    line-height: 60px;
+}
+
+.hero-tittle .ino{
+    font-size: 75px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    
+}
+
+.hero-tittle .detaials{
+    width: 60%;
+    padding-top: 1.5rem;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    padding-bottom: 2.5rem;
+}
+
+.hero-tittle .us button{
+    background: rgba( 4, 114, 77, 0.65 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 14px );
+    -webkit-backdrop-filter: blur( 14px );
+    border-radius: 50px;
+    border: none;
+    color: aliceblue;
+    padding: 12px 50px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.list{
+    bottom: 25px;
+    position: absolute;
+    left: 35rem;
+}
+
+.list ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    color: aliceblue;
+    width: 65vw;
+    height: 15rem;
+    align-items: center;
+    
+}
+
+.list .thumbnail{
+    display: flex;
+    height: 10rem;
+    width: 18rem;
+    background-size: cover !important;
+    border-radius: 8px;
+    flex-direction: column;
+}
+
+.list .thumbnail .details {
+    margin-top: auto; 
+    padding: 10px 0px;
+}
+
+.details .lab-name{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+.list p{
+    padding-left: 20px;
+    margin-bottom: auto;
+    line-height: 24px;
 }
