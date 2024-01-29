@@ -46,7 +46,7 @@
 .banner .glass-wrapper{
     width: 30%;
     height: 100%;
-    background: rgba( 7, 42, 108, 0.35 );
+    background: rgba(141, 153, 174, 0.35);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 16.5px );
     -webkit-backdrop-filter: blur( 16.5px );
@@ -80,9 +80,9 @@
     padding-bottom: 2.5rem;
 }
 
-.hero-tittle .us button{
-    background: rgba( 4, 114, 77, 0.65 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+/* .hero-tittle .us button{
+    background: rgba( 353, 35, 60);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
     backdrop-filter: blur( 14px );
     -webkit-backdrop-filter: blur( 14px );
     border-radius: 50px;
@@ -91,7 +91,55 @@
     padding: 12px 50px;
     letter-spacing: 1.5px;
     cursor: pointer;
-}
+} */
+
+.hero-tittle .us button {
+    display: inline-block;
+    padding: 0.65em 1.6em;
+    border: 3px solid #ffffff;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    transition: all 0.2s;
+    animation: bn13bouncy 5s infinite linear;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+  }
+  
+  .hero-tittle .us button:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: #000000;
+  }
+  
+  @keyframes bn13bouncy {
+    0% {
+      top: 0em;
+    }
+    40% {
+      top: 0em;
+    }
+    43% {
+      top: -0.9em;
+    }
+    46% {
+      top: 0em;
+    }
+    48% {
+      top: -0.4em;
+    }
+    50% {
+      top: 0em;
+    }
+    100% {
+      top: 0em;
+    }
+  }
 
 .list{
     bottom: 25px;
@@ -117,6 +165,7 @@
     background-size: cover !important;
     border-radius: 8px;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .list .thumbnail .details {
@@ -135,3 +184,12 @@
     margin-bottom: auto;
     line-height: 24px;
 }
+.list .thumbnail:hover {
+    box-shadow: 0px 0px 20px 1px #ffbb763f;
+    border: 1px solid rgba(255, 255, 255, 0.454);
+  }
+
+  .list .active{
+    margin-top: -2rem;
+
+  }
