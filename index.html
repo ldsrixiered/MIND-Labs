@@ -6,13 +6,14 @@
     <title>MIND Lab</title>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="website icon" href="./img/mindlab.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
     <div class="container">
         <div class="header">
             <div class="logo"><img src="./img/mindlab.png" alt="MIND"></div>
-            <ul>
+            <ul data-aos="fade-down" data-aos-duration="700" >
                 <li><a href="https://www.youtube.com/watch?v=WhulFcVuHTg&t=1391s">Home</a></li>
                 <li>News</li>
                 <li>About</li>
@@ -22,13 +23,27 @@
         <div 
         class="banner" 
         style="background-image: url('./img/media.png');">
-            <div class="glass-wrapper"></div>
+            <div class="glass-wrapper" 
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000"></div>
 
         </div>
         <div class="hero-tittle">
-            <p>Rixie</p>
-            <p class="ino">MEDIA MARKETING</p>
-            <div class="detaials">Media Buyer 
+            <p data-aos="zoom-out-left" data-aos-duration="1000">Rixie</p>
+            <p class="ino"
+            data-aos="zoom-out-left" 
+            data-aos-duration="1000" 
+            data-aos-delay="500"
+            
+            >MEDIA MARKETING</p>
+            <div class="detaials"
+            data-aos="zoom-out-left" 
+            data-aos-duration="1000" 
+            data-aos-delay="600"
+            >
+            Media Buyer 
                 <hr> Engangement Content
                 <hr> info Graphics Content
                 <hr> Facts or Tips Content
@@ -36,14 +51,18 @@
                 <hr> Inspirational Content
                 <hr>
             </div>
-            <div class="us">
+            <div class="us" data-aos="zoom-out-left" 
+            data-aos-duration="1000" 
+            data-aos-delay="600">
                 <button>Choose me
                 </button>
             </div>
         </div>
         <div class="list">
             <ul class="m-list">
-                <li class="active">
+                <li class="active"
+                data-img="./img/banner.png"
+                data-aos="zoom-in-up" data-aos-duration="700">
                     <div class="thumbnail" style="background: url('./img/banner.png');">
                         <div class="details">
                             <p class="lab">Web</p>
@@ -51,7 +70,9 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li
+                data-img="./img/VideoEditor.png"
+                 data-aos="zoom-in-up" data-aos-duration="700">
                     <div class="thumbnail" style="background: url('./img/VideoEditor.png');">
                         <div class="details">
                             <p class="lab">Video</p>
@@ -59,7 +80,10 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li
+                data-img="./img/graphicsdesign.png"
+                data-aos="zoom-in-up" data-aos-duration="700">
+                
                     <div class="thumbnail" style="background: url('./img/graphicsdesign.png">
                         <div class="details">
                             <p class="lab">Graphics</p>
@@ -73,14 +97,26 @@
     
 </body>
 <style></style>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    let places = document.querySelectorAll('.list li')
-    let active = /img/media.png
+    AOS.init();
 
-    places.forEach((e) => {
+    let m = document.querySelectorAll('.m-list li')
+    let active = "/img/media.png" ;
+
+    m.forEach((e) => {
        e.addEventListener ("mouseenter", (event) => {
-         alert ();
-       })
-    })
+         m.forEach((e) => {
+            e.classList.remove("active");
+         });
+
+        event.target.classList.add("active");
+        active = event.target.getAttribute('data-img');
+        let banner = document.querySelector('.banner');
+        banner.style.backgroundImage = `url('${active}')`;
+       });
+    });
 </script>
-</html>    
+</html>
+
+
