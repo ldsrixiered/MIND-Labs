@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rixie | Portfolio</title>
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="website icon" href="./img/evs.jpg">
+    <link rel="stylesheet" href="../assets/web.css">
+    <link rel="website icon" href="../img/evs.jpg">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
     <div class="container">
         <div class="header">
-            <div class="logo"><img src="./img/evs.jpg" alt="Rixie"></div>
+            <div class="logo"><img src="../img/evs.jpg" alt="Rixie"></div>
             <ul data-aos="fade-down" data-aos-duration="700" >
-                <li><a href="#">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="#">Sample</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
@@ -22,7 +22,7 @@
         </div>
         <div 
         class="banner" 
-        style="background-image: url('./img/media.png');">
+        style="background-image: url('../img/banner.png');">
             <div class="glass-wrapper" 
             data-aos="fade-right"
             data-aos-offset="300"
@@ -37,18 +37,18 @@
             data-aos-duration="1000" 
             data-aos-delay="500"
             
-            >MEDIA MARKETING</p>
+            >Web Design</p>
             <div class="detaials"
             data-aos="zoom-out-left" 
             data-aos-duration="1000" 
             data-aos-delay="600"
             >
-            Media Buyer 
-                <hr> Engangement Content
-                <hr> info Graphics Content
-                <hr> Facts or Tips Content
-                <hr> Marketing Content
-                <hr> Inspirational Content
+            Web Design 
+                <hr> SEO
+                <hr> GoDaddy
+                <hr> HTML,CSS 
+                <hr> Wix.website
+                <hr> WordPress
                 <hr>
             </div>
             <div class="us" data-aos="zoom-out-left" 
@@ -64,10 +64,10 @@
                 data-img="./img/banner.png"
                 data-aos="zoom-in-up" data-aos-duration="700">
                 <a href="#">
-                    <div class="thumbnail" style="background: url('./img/banner.png');">
+                    <div class="thumbnail" style="background: url('../img/media.png');">
                         <div class="details">
-                            <p class="lab">Web</p>
-                            <p class="lab-name">Design</p>
+                            <p class="lab">Social Media</p>
+                            <p class="lab-name">Marketing</p>
                         </div>
                     
                     </div>
@@ -77,7 +77,7 @@
                 data-img="./img/VideoEditor.png"
                  data-aos="zoom-in-up" data-aos-duration="700">
                  <a href="#">
-                    <div class="thumbnail" style="background: url('./img/VideoEditor.png');">
+                    <div class="thumbnail" style="background: url('../img/VideoEditor.png');">
                         <div class="details">
                             <p class="lab">Video</p>
                             <p class="lab-name">Editor</p>
@@ -90,7 +90,7 @@
                     data-aos="zoom-in-up" data-aos-duration="700">
                     <a href="#">
                 
-                        <div class="thumbnail" style="background: url('./img/graphicsdesign.png');">
+                        <div class="thumbnail" style="background: url('../img/graphicsdesign.png');">
                             <div class="details">
                                 <p class="lab">Graphics</p>
                                 <p class="lab-name">Design</p>
@@ -110,7 +110,7 @@
     AOS.init();
 
     let m = document.querySelectorAll('.m-list li')
-    let active = "/img/media.png" ;
+    let active = "/img/banner.png" ;
 
     m.forEach((e) => {
        e.addEventListener ("mouseenter", (event) => {
