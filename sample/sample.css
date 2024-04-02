@@ -167,8 +167,26 @@ main div h2{
   text-shadow: #717171 2px 2px ;
 }
 
+main section span{
+  color: goldenrod;
+  font-size: 30px;
+}
+
+main section p{
+  font-size: 20px;
+  padding: 10px 100px;
+}
+
+section ul{
+  text-align: left;
+  padding-left: 150px;
+}
+
 footer {
   display: flex;
   justify-content: center;
+  background-color: rgb(54, 53, 53);
+  color: goldenrod;
+  padding: 20px;
 
 }
