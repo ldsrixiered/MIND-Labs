@@ -101,6 +101,7 @@ main .slideshow-container img{
 
 header img{
     width: 80px;
+    border-radius: 50%;
 
 }
 header nav{
@@ -112,12 +113,13 @@ header nav a{
     padding-top: 20px;
     text-decoration: none;
     font-size: 25px;
-    color: black;
+    color: gold;
 }
 
 header{
     padding: 20px 0 50px 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(54, 53, 53);
 }
 main{
     text-align: center;
@@ -127,6 +129,46 @@ main h1, h3{
     color: goldenrod;
     font-size: 40px;
 }
-main{
-    background-image: linear-gradient( grey, black, goldenrod );
+section .pic img{
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
+
+}
+section .pic{
+  display: flex;
+  justify-content: center;
+   padding: 30px 0 50px 0;
+
+}
+
+main .slideshow-container{
+  width: 500px;
+}
+
+/* .pic figure{
+  width: 350px;
+  height: 254px;
+  border-radius: 30px;
+  background: #e0e0e0;
+  box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
+  
+} */
+
+main div h2{
+  padding: 100px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: goldenrod;
+  font-size: 50px;
+  text-shadow: #717171 2px 2px ;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+
 }
