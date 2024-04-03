@@ -194,3 +194,21 @@ footer {
   padding: 20px;
 
 }
+section .mmc img{
+  position: relative;
+  width: 100%;
+  height: 600px;
+  border-radius: 2%;
+}
+
+section .mmc h3{
+  position: absolute;
+  top: 115rem;
+  left: 35%;
+  font-size: 60px; 
+  background-color: rgb(54, 53, 53);
+  padding: 10px 20px;
+  border: solid goldenrod;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px goldenrod;
+}
